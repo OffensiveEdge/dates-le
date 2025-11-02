@@ -153,6 +153,8 @@ Dates-LE is built for speed and efficiently processes files from 100KB to 10MB+.
 **Performance Monitoring**: Built-in real-time tracking with configurable thresholds  
 **Full Metrics**: [docs/PERFORMANCE.md](docs/PERFORMANCE.md) • Test Environment: macOS, Bun 1.2.22, Node 22.x
 
+For detailed information, see [Performance Monitoring](docs/PERFORMANCE.md).
+
 <!-- PERFORMANCE_END -->
 
 ## 🔧 Troubleshooting
@@ -183,13 +185,19 @@ Absolutely! Extract timestamps from server logs, application traces, and monitor
 ## 📊 Testing
 
 **88 unit tests** • **90% function coverage, 86% line coverage**  
-Powered by Vitest • Run with `bun test --coverage`
+Powered by Vitest • Run with `bun run test:coverage`
+
+### Core Principle
+
+**No broken or failed tests are allowed in commits.** All tests must pass before code can be committed or merged.
 
 ### Test Suite Highlights
 
 - **48 error handling tests** with 100% coverage
 - **Comprehensive date format support** (ISO, RFC2822, Unix timestamps, custom formats)
 - **CSV, JSON, YAML, log file** extraction validation
+
+For detailed testing guidelines, see [Testing Guidelines](docs/TESTING.md).
 
 ---
 
