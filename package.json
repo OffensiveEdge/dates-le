@@ -1,6 +1,6 @@
 {
 	"name": "dates-le",
-	"publisher": "nolindnaidoo",
+	"publisher": "OffensiveEdge",
 	"displayName": "Dates-LE",
 	"description": "Zero Hassle Date/Time Extraction and Analysis from Logs, Configs, and Code",
 	"version": "1.8.1",
@@ -225,7 +225,7 @@
 				},
 				"dates-le.safety.fileSizeWarnBytes": {
 					"type": "number",
-					"default": 1000000,
+					"default": 1e6,
 					"minimum": 1000,
 					"description": "%manifest.settings.safety.warn.file-size.desc%"
 				},
@@ -295,8 +295,8 @@
 				},
 				"dates-le.performance.maxCpuUsage": {
 					"type": "number",
-					"default": 1000000,
-					"minimum": 100000,
+					"default": 1e6,
+					"minimum": 1e5,
 					"description": "%manifest.settings.performance.max-cpu.desc%"
 				},
 				"dates-le.performance.minThroughput": {
@@ -383,6 +383,7 @@
 		"@vitest/ui": "^3.2.4",
 		"@vscode/test-electron": "^2.5.2",
 		"@vscode/vsce": "^3.6.2",
+		"ovsx": "^0.10.6",
 		"tsx": "^4.20.6",
 		"typescript": "^5.9.3",
 		"vitest": "^3.2.4"
